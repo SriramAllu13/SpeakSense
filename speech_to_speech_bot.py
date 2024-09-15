@@ -39,7 +39,7 @@ def capture_speech():
 # Generating Response using Gemini
 def generate_response(prompt):
     response = model.generate_content(prompt, generation_config=genai.types.GenerationConfig(
-        max_output_tokens=50,
+        max_output_tokens=75,
     ))  
     return response.text
 
